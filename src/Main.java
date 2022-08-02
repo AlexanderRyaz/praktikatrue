@@ -11,12 +11,15 @@ public class Main {
 
         int bananas = 5*80; int milk = 2*105; int iceCream = 2*100; int eggs = 4*70;
         int totalWeight = bananas + milk + iceCream + eggs;
-        int breakfastWeight = totalWeight / 1000;
+        double breakfastWeight = totalWeight /(1000*1.0);
         System.out.println("Вес спорт-завтрака равен " + breakfastWeight + "кг"); // 3 задание готово
+
         int weightGr = 7*1000;
         int workoutOne = weightGr/250; int workoutToo = weightGr/500;
-        System.out.println("Среднее кол-во дней для похудения если терять по 250гр в день равно " + workoutOne);
-        System.out.println("Среднее кол-во дней для похудения если терять по 500гр в день равно " + workoutToo); // 4 задание готово
+        double average = (workoutOne + workoutToo) / (2*1.0);
+        System.out.println(" Кол-во дней для похудения если терять по 250гр в день равно " + workoutOne);
+        System.out.println(" Кол-во дней для похудения если терять по 500гр в день равно " + workoutToo);
+        System.out.println(" Среднее кол-во дней для похудения  равно " + average);// 4 задание готово
 
         int incomeMasha = 67760; int incomeDenis = 83690; int incomeKristina = 76230;
         int incomYearMasha = 67760*12; int incomeYearDenis = 83690*12; int incomeYearKristina = 76230*12;
@@ -24,9 +27,9 @@ public class Main {
         double newIncomYearMasha = MashaNew *12; double newIncomeYearDenis = DenisNew*12; double newIncomeYearKristina = KristinaNew*12;
         double differenceMasha = newIncomYearMasha - incomYearMasha; double differenceDenis = newIncomeYearDenis - incomeYearDenis;
         double differenceKristina = newIncomeYearKristina - incomeYearKristina;
-        System.out.println("Маша теперь получает  " + MashaNew + " рублей. Годовой доход вырос на " + differenceMasha );
-        System.out.println("Денис теперь получает  " + DenisNew + " рублей. Годовой доход вырос на " + differenceDenis );
-        System.out.println("Кристина теперь получает  " + KristinaNew + " рублей. Годовой доход вырос на " + differenceKristina );
+        System.out.println("Маша теперь получает  " + MashaNew + " рублей. Годовой доход вырос на " + differenceMasha + " рублей" );
+        System.out.println("Денис теперь получает  " + DenisNew + " рублей. Годовой доход вырос на " + differenceDenis + " рублей" );
+        System.out.println("Кристина теперь получает  " + KristinaNew + " рублей. Годовой доход вырос на " + differenceKristina + " рублей" );
         // 5 задание выполнено
     }
 }
